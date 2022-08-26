@@ -1,0 +1,42 @@
+/* class selector */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  font-family: 'Noto Sans TC',sans-serif !important;
+  background-color:#B7B7A4;
+}
+.frame{
+    flex:none;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+}
+.headline{
+    margin-top:10px;padding:5px;font-size:30px;color:#6B705C;text-align:center;text-decoration:underline;background-color:#DDBEA9;
+}
+.question{margin-top:10px;margin-bottom:10px;padding:10px;background-color: #FFE8D6;font-size:20px;}
+.answer{font-size:16px;}
+@media(max-width:1250px){
+    /*螢幕寬度1250px以上套用以上的規則，for桌機 */
+    /*螢幕寬度1250px以下，套用以下區塊的css*/
+    .headline{
+        font-size:24px; /*重新定義文字大小，為了文字顯示保持一行（不換行）*/
+    }
+    .question{
+        font-size: 16px;
+    }
+    .answer{
+        font-size:14px
+    }
+}
+@media(max-width:500px){
+    /*螢幕寬度500px以下，套用以下區塊的css，for 手機 */
+    .headline{
+        font-size:20px; 
+    }
+    .question{
+        font-size: 14px;
+    }
+    .answer{
+        font-size:12px
+    }
+}
